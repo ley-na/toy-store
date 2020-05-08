@@ -1,34 +1,31 @@
-.product-main {
-  padding: 0 30px;
-}
-
 .product-main__header-wrapper {
   margin-top: 23px;
 }
 
-.product-main__header {
-  .title();
+.product-main__title {
+  .text-h2();
+
   margin: 0;
   margin-bottom: 8px;
 }
 
 .product-main__week {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
+  .text-h3();
+
   text-transform: uppercase;
   color: @main-color;
   margin: 0;
 }
 
 .product-main__description {
-  .main-text();
+  .text-h4();
+
   color: @text-color;
 }
 
 .product-main__characteristics {
-  font-size: 15px;
-  line-height: 20px;
+  .text-h4-s();
+
   color: @text-color;
   margin-bottom: 28px;
 }
@@ -37,7 +34,7 @@
 .product-main__value {
   display: inline-block;
   padding: 10px 0 10px 0;
-  border-bottom: 1px solid @grey;
+  border: @border-1;
 }
 
 .product-main__field {
@@ -53,9 +50,8 @@
 }
 
 .product-main__price {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
+  .text-h3-l();
+
   text-align: center;
   color: @text-color;
 }
