@@ -1,8 +1,151 @@
 .main-nav__wrapper {
   position: relative;
+
+  @media (min-width: @width-tablet) {
+    max-width: @width-tablet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @width-desktop) {
+    max-width: @width-desktop;
+  }
 }
+
 
 .main-nav__logo-image {
   display: block;
+  width: 86px;
   margin: 20px auto;
+  padding-top: 2px;
+  padding-right: 4px;
+
+  @media (min-width: @width-tablet) {
+    width: 113px;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 150px;
+    margin: 5px auto;
+  }
+}
+
+
+.main-nav__logo-link {
+  &:hover .main-nav__logo-image,
+  &:focus .main-nav__logo-image {
+    opacity: 0.6;
+  }
+
+  &:active .main-nav__logo-image {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @width-tablet) {
+    order: 1;
+  }
+
+  @media (min-width: @width-desktop) {
+    order: 2;
+    padding-left: 0;
+    margin-left: -50px;
+  }
+}
+
+
+.main-nav__opened {
+  border: none;
+  background-color: transparent;
+  width: 75px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: @black;
+    left: 24px;
+    top: 12px;
+    box-shadow: 0 6px 0 0 @black, 0 12px 0 0 @black;
+  }
+
+  @media (min-width: @width-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__closed {
+  border: none;
+  background-color: transparent;
+  width: 75px;
+  height: 40px;
+  position: absolute;
+  top: 6px;
+  right: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: @black;
+    left: 24px;
+    top: 12px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: @black;
+    left: 24px;
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: @width-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: block;
+
+  @media (min-width: @width-tablet) {
+    display: flex;
+  }
+}
+
+.main-nav__delivery {
+  display: none;
+
+  @media (min-width: @width-tablet) {
+    .text-h4();
+
+    font-weight: normal;
+    display: block;
+    color: @text-color;
+    order: 5;
+    margin-top: 5px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: @width-desktop) {
+    margin-top: 0;
+  }
+}
+
+.main-nav__menu-toggle--no-js {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }

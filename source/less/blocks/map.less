@@ -1,5 +1,27 @@
+.map {
+  margin-bottom: 40px;
+  position: relative;
+
+  @media (min-width: @width-tablet) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @width-desktop) {
+    position: absolute;
+    top: 97px;
+    right: 50px;
+  }
+}
+
 .map__img {
-  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+
+  @media (min-width: @width-desktop) {
+    width: 525px;
+    height: 457px;
+  }
 }
 
 .map__button {
@@ -7,4 +29,15 @@
 
   width: 100%;
   margin: 0 auto 39px;
+  padding: 15px 25px;
+
+  @media (min-width: @width-tablet) {
+    width: 230px;
+  }
+
+  @media (min-width: @width-desktop) {
+    margin: 0;
+    margin-left: 175px;
+    margin-top: 23px;
+  }
 }

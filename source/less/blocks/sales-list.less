@@ -1,0 +1,38 @@
+.sales-list {
+  .list-reset();
+  display: none;
+
+  @media (min-width: @width-desktop) {
+    display: flex;
+    order: 4;
+  }
+}
+
+.sales-list__item {
+  box-shadow: @box-shadow;
+  padding: 30px 0 30px 76px;
+
+  @media (min-width: @width-tablet) {
+    box-shadow: none;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding: 15px 13px 30px 49px;
+  }
+}
+
+.sales-list__link {
+  .link-reset();
+  .text-h4();
+
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: @black-60;
+  }
+
+  &:active {
+    color: @black-30;
+  }
+}

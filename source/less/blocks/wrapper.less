@@ -1,8 +1,13 @@
 .wrapper {
   box-sizing: border-box;
-  width: @width-mobile;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @media (min-width: @width-tablet) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @width-desktop) {
+    max-width: @width-desktop;
+  }
 }

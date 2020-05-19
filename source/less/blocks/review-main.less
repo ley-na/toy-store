@@ -1,11 +1,127 @@
 .review-main {
-  padding: 0 30px;
+  margin-bottom: 45px;
+
+  @media (min-width: @width-tablet) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px 457px;
+    padding-top: 75px;
+    padding-bottom: 15px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-top: 73px;
+    padding-left: 175px;
+    padding-bottom: 65px;
+    background-position: 50px 0;
+    margin-bottom: 65px;
+  }
 }
 
 .review-main__title {
   .text-h2();
+  margin-bottom: 24px;
+
+  @media (min-width: @width-tablet) {
+    .header-size-tablet();
+    margin: 0;
+    // order: 1;
+    flex-grow: 1;
+    margin-bottom: 32px;
+    width: 73%;
+  }
+
+  @media (min-width: @width-desktop) {
+    .header-size-desktop();
+    margin-left: 45px;
+    width: 76%;
+  }
 }
 
 .review-main__button {
   .link-reset();
+  padding: 15px 25px;
+
+  @media (min-width: @width-tablet) {
+    order: 2;
+    align-self: flex-start;
+    width: 175px;
+  }
+
+  @media (min-width: @width-desktop) {
+    margin-top: 7px;
+  }
+}
+
+.review-main__text {
+  @media (min-width: @width-tablet) {
+    order: 3;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-left: 50px;
+  }
+}
+
+.review-main__author {
+  margin-top: 25px;
+  margin-bottom: 33px;
+
+  @media (min-width: @width-tablet) {
+    margin-top: 58px;
+    width: 70%;
+  }
+
+  @media (min-width: @width-desktop) {
+    margin-top: 37px;
+  }
+}
+
+.review-main__nav {
+  display: flex;
+  margin: 20px 0 35px;
+
+  @media (min-width: @width-tablet) {
+    position: absolute;
+    bottom: 12px;
+    right: 50px;
+    order: 4;
+  }
+
+  @media (min-width: @width-desktop) {
+    bottom: 63px;
+    right: 51px;
+  }
+}
+
+.review-main__nav-button {
+  width: 87px;
+  height: 50px;
+  padding: 0;
+  flex-grow: 1;
+  background-color: transparent;
+  border: @border-light;
+
+  &:first-child {
+    border-right: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @width-tablet) {
+    border: none;
+  }
 }
