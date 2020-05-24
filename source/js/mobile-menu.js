@@ -1,10 +1,9 @@
-var menuToggle = document.querySelector(".main-nav__menu-opened");
+var menuToggle = document.querySelector(".main-nav__menu--opened");
 var siteList = document.querySelector(".site-list");
 var userList = document.querySelector(".user-list");
 
 siteList.classList.remove('site-list--no-js');
 userList.classList.remove('user-list--no-js');
-menuToggle.classList.remove('main-nav__menu-toggle--no-js');
 
 menuToggle.addEventListener("click", function () {
     if (menuToggle.classList.contains('main-nav__menu-opened')) {
