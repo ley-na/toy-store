@@ -32,7 +32,7 @@
   padding: 17px 9% 20px 9%;
   transition: 0.35s transform;
 
-  &:hover,
+  &[href]:hover,
   &:focus,
   &:active {
     background-color: @main-color-hover;
@@ -40,7 +40,7 @@
     transition: 0.35s transform;
   }
 
-  &:hover > .category-list__icon,
+  &[href]:hover > .category-list__icon,
   &:focus > .category-list__icon {
     opacity: 0.7;
   }
@@ -63,7 +63,7 @@
 .category-list__link--dark {
   background-color: @main-color--dark;
 
-  &:hover,
+  &[href]:hover,
   &:focus,
   &:active {
     background-color: @main-color--dark-hover;

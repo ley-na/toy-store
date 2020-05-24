@@ -9,17 +9,17 @@
 </head>
 
 <body>
-  <!-- <div style="display: none;">
+  <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
-  </div> -->
+  </div>
   <header class="header">
     <nav class="wrapper main-nav">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo-link">
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+            <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип">
           </picture>
           </a>
         <button class="main-nav__menu main-nav__menu--opened main-nav__menu--no-js" type="button" aria-label="Открыть меню"></button>
@@ -33,18 +33,19 @@
         </ul>
         <ul class="main-nav__list user-list user-list--closed user-list--no-js">
           <li class="user-list__item user-list__item--search">
-            <a class="user-list__link user-list__link--icon-search" href="search.html" aria-label="Поиск по сайту">
-              <svg class="user-list__icon user-list__icon--search" width="18" height="18">
+            <a class="user-list__link user-list__link---search" aria-label="Поиск по сайту">
+              <svg class="user-list__icon user-list__link--search" width="18" height="18">
                 <use xlink:href="#icon-search"></use>
               </svg>
-              <span class="user-list__text">Поиск по сайту</span></a>
+              <p class="user-list__text">Поиск по сайту</p></a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__link user-list__link--icon-cart" href="cart.html">
-              <svg class="user-list__icon user-list__icon--cart" width="20" height="19">
+            <a class="user-list__link user-list__link---cart">
+              <svg class="user-list__icon user-list__link--cart" width="20" height="19">
                 <use xlink:href="#icon-cart"></use>
               </svg>
-              Корзина: пока пуста</a>
+              <span>Корзина: пока пуста</span>
+            </a>
           </li>
         </ul>
         <ul class="main-nav__list sales-list">
@@ -67,7 +68,7 @@
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="category-main__list category-list">
         <li class="category-list__item">
-          <a class="category-list__link" href="">
+          <a class="category-list__link">
             <p class="category-list__link-content">Предметы интерьера</p>
               <svg class="category-list__icon" width="40" height="62">
                 <use xlink:href="#icon-interior"></use>
@@ -76,7 +77,7 @@
           </svg>
         </li>
         <li class="category-list__item category-list__item--dark">
-          <a class="category-list__link category-list__link--dark" href="">
+          <a class="category-list__link category-list__link--dark">
             <p class="category-list__link-content">Детские игрушки</p>
             <svg class="category-list__icon category-list__icon--toy" width="60" height="60">
               <use xlink:href="#icon-toy"></use>
@@ -109,13 +110,13 @@
         </table>
       </div>
       <picture>
-        <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.webp 1x, ./img/triple-set-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.webp 1x, ./img/triple-set-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="./img/triple-set-mobile@1x.webp 1x, ./img/triple-set-mobile@2x.webp 2x">
 
-        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-        <img class="product-main__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Три вязаные корзинки" width="260" height="315">
+        <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
+        <img class="product-main__img" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Три вязаные корзинки" width="260" height="315">
       </picture>
       <div class="product-main__price-wrapper">
         <p class="product-main__price">Цена: 990 руб.</p>
@@ -165,7 +166,7 @@
           сразу стали более стильными, а также набирают больше лайков!</p>
         <div class="review-main__author author-content">
           <p class="review-content__author">Анастасия Красильникова</p>
-          <a class="review-content__author-social" href="">@misssssiskras</a>
+          <a class="review-content__author-social">@misssssiskras</a>
         </div>
       </article>
       <div class="review-main__nav">
@@ -180,9 +181,9 @@
           </svg>
         </button>
       </div>
-      <a class="wrapper button review-main__button" href="">Написать</a>
+      <a class="wrapper button review-main__button">Написать</a>
     </section>
-    <div class="contacts-main__wrapper wrapper clearfix">
+    <div class="contacts-main__wrapper clearfix">
       <section class="contacts-main">
         <div class="contacts-main__header-wrapper">
           <h2 class="contacts-main__title">Контакты
@@ -208,16 +209,16 @@
       <section class="map">
         <div class="map__api" id="map"></div>
         <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Магазин по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="320" height="457">
+          <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+          <img class="map__img" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Магазин по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="320" height="457">
         </picture>
       </section>
-      <a class="wrapper button contacts-main__button" href="">Напишите нам</a>
+      <a class="wrapper button contacts-main__button">Напишите нам</a>
     </div>
   </main>
   <footer class="footer">
@@ -229,21 +230,21 @@
       </a>
       <ul class="wrapper footer__social social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="">
+          <a class="social-list__link">
             <svg width="22" height="22">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="">
+          <a class="social-list__link">
             <svg width="15" height="28">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="">
+          <a class="social-list__link">
             <svg width="23" height="20">
               <use xlink:href="#icon-twitter"></use>
             </svg>

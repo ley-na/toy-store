@@ -6,12 +6,12 @@ siteList.classList.remove('site-list--no-js');
 userList.classList.remove('user-list--no-js');
 
 menuToggle.addEventListener("click", function () {
-    if (menuToggle.classList.contains('main-nav__menu-opened')) {
-      menuToggle.classList.remove('main-nav__menu-opened');
-      menuToggle.classList.add('main-nav__menu-closed');
+    if (menuToggle.classList.contains('main-nav__menu--opened')) {
+      menuToggle.classList.remove('main-nav__menu--opened');
+      menuToggle.classList.add('main-nav__menu--closed');
     } else {
-      menuToggle.classList.add('main-nav__menu-opened');
-      menuToggle.classList.remove('main-nav__menu-closed');
+      menuToggle.classList.add('main-nav__menu--opened');
+      menuToggle.classList.remove('main-nav__menu--closed');
     }
 
     if (siteList.classList.contains('site-list--closed')) {
