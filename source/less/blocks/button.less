@@ -3,10 +3,25 @@
 
   border: @border-dark;
   display: block;
+  box-sizing: border-box;
   text-align: center;
   color: @text-color;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   padding: 15px 25px;
+
+  &:hover,
+  &:focus {
+    background-color: @text-color;
+    color: @white;
+    cursor: pointer;
+    transition: 0.35s;
+  }
+
+  &:active {
+    background-color: @text-color;
+    color: @white-30;
+    transition: 0.35s;
+  }
 }

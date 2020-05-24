@@ -10,7 +10,7 @@
 
   @media (min-width: @width-tablet) {
     flex-direction: row;
-    padding: 42px 0 45px;
+    // padding: 42px 0 45px;
   }
 }
 
@@ -37,15 +37,14 @@
 
   &:active {
     color: @black-30;
-  }
-
-  &:hover > .footer__copyright-logo,
-  &:focus > .footer__copyright-logo {
-    fill: @main-color--dark-hover;
-  }
-
-  &:active > .footer__copyright-logo {
     fill: @main-color--dark-hover-30;
+    transition: 0.35s;
+  }
+
+  &:hover,
+  &:focus {
+    fill: @main-color--dark-hover;
+    transition: 0.35s;
   }
 
   @media (min-width: @width-tablet) {

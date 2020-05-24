@@ -1,26 +1,22 @@
 .contacts-main {
-  margin-bottom: 20px;
   box-sizing: border-box;
 
   @media (min-width: @width-tablet) {
-    margin-bottom: 55px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: @width-desktop) {
     position: relative;
-    min-height: 457px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: @width-desktop;
-    padding: 0 50px;
-    margin: 0 auto 102px;
+    justify-content: flex-start;
+    padding-bottom: 84px;
   }
 }
 
 .contacts-main__header-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   margin-bottom: 10px;
 
@@ -29,15 +25,14 @@
   }
 
   @media (min-width: @width-desktop) {
-    width: 45%;
+    width: 50%;
   }
 }
 
 .contacts-main__wrapper {
   position: relative;
-  padding: 0 30px;
-  padding-top: 25px;
-  margin-bottom: 35px;
+  padding-top: 78px;
+  padding-bottom: 35px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
@@ -46,15 +41,15 @@
   @media (min-width: @width-tablet) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-size: auto 15px;
-    margin-bottom: 52px;
+    padding-bottom: 52px;
     background-position: 0 3px;
   }
 
   @media (min-width: @width-desktop) {
     display: block;
-    padding-top: 95px;
+    padding-top: 105px;
     background-size: 100% 23px;
   }
 }
@@ -62,21 +57,20 @@
 
 .contacts-main__title {
   .text-h2-s();
-
+  margin: 0;
   margin-bottom: 14px;
 
   @media (min-width: @width-tablet) {
-    .header-size-tablet();
+    .text-h1-l();
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
-    margin: 55px 23px 3px 15px;
   }
 
   @media (min-width: @width-desktop) {
-    .header-size-desktop();
+    .text-h1-xl();
     margin-top: 70px;
-    margin-right: 33px;
+    margin-right: 120px;
   }
 }
 
@@ -85,13 +79,13 @@
 
   @media (min-width: @width-tablet) {
     display: block;
+    margin-left: auto;
     margin-top: -15px;
   }
 
   @media (min-width: @width-desktop) {
     order: -1;
-    margin-top: -8px;
-    margin-left: 18px;
+    margin-right: auto;
   }
 }
 
@@ -103,7 +97,6 @@
 
   @media (min-width: @width-tablet) {
     font-size: 17px;
-    margin-left: 15px;
   }
 
   @media (min-width: @width-desktop) {
@@ -164,5 +157,22 @@
   &:active {
     color: @main-color--dark-hover-30;
     box-shadow: 0 1px 0 0 @main-color--dark-hover-10;
+  }
+}
+
+.contacts-main__button {
+  .link-reset();
+
+  width: 100%;
+  margin: 0 auto 38px;
+  padding: 15px 25px;
+
+  @media (min-width: @width-tablet) {
+    width: 230px;
+  }
+
+  @media (min-width: @width-desktop) {
+    float: left;
+    margin-left: 13%;
   }
 }

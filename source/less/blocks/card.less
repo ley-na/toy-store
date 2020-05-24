@@ -1,39 +1,48 @@
 .card {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding-bottom: 30px;
 
   @media (min-width: @width-tablet) {
     flex-direction: row;
-    margin-bottom: 54px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: @width-desktop) {
-    flex-direction: column;
     width: 316px;
-    margin-bottom: 57px;
+    flex-direction: column;
+    padding-bottom: 57px;
   }
 
-  &:hover .card-content-wrapper,
-  &:focus .card-content-wrapper {
+  &:hover .card__content-wrapper,
+  &:focus .card__content-wrapper {
     box-shadow: 0 6px 10px 0 @black-10;
+    transition: 0.35s;
   }
 
-  &:active .card-content-wrapper {
+  &:active .card__content-wrapper {
     box-shadow: 0 3px 5px 0 @black-10;
+  }
+}
+
+.card:not(:nth-child(3n+3)) {
+  @media (min-width: @width-desktop) {
+    margin-right: 50px;
   }
 }
 
 .card__img {
   display: block;
+  width: 100%;
+  height: 100%;
 
   @media (min-width: @width-tablet) {
     width: 334px;
-    height: 334px;
   }
 
   @media (min-width: @width-desktop) {
     width: 316px;
-    height: 462px;
   }
 }
 
@@ -57,29 +66,31 @@
   .text-h3-l();
 
   margin-top: 28px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 
   @media (min-width: @width-tablet) {
-    font-size: 20px;
+    .text-h2-l();
+
     margin-top: 25px;
   }
 }
 
 .card__content-wrapper {
+  box-sizing: border-box;
   padding-left: 28px;
   padding-right: 28px;
   border: @border-light;
 
   @media (min-width: @width-tablet) {
+    padding-left: 28px;
+    padding-right: 75px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 335px;
-    flex-grow: 1;
   }
 
   @media (min-width: @width-desktop) {
-    width: 316px;
+    padding-left: 28px;
+    padding-right: 26px;
   }
 }
 
@@ -89,21 +100,25 @@
   color: @text-color;
 
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 50px;
 
   @media (min-width: @width-tablet) {
-    font-size: 15px;
+    .text-h4-l();
+
+    font-weight: normal;
+    margin-bottom: 210px;
   }
 
   @media (min-width: @width-desktop) {
-    margin-bottom: 14px;
+    margin-bottom: 70px;
   }
 }
 
 .card__price {
   .text-h4();
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
 
   @media (min-width: @width-tablet) {
     font-size: 17px;

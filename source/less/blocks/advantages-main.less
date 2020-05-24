@@ -1,0 +1,117 @@
+.advantages-main {
+  position: relative;
+  padding: 47px 30px 0 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: @width-desktop) {
+    box-sizing: border-box;
+    padding-left: 180px;
+    padding-top: 95px;
+    padding-bottom: 30px;
+  }
+}
+
+.advantages-main::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+
+  @media (min-width: @width-tablet) {
+    background-size: auto 15px;
+  }
+
+  @media (min-width: @width-desktop) {
+    background-size: auto 23px;
+  }
+}
+
+.advantages-main__title {
+  .text-h2();
+
+  @media (min-width: @width-tablet) {
+    .text-h1-l();
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 670px;
+  }
+
+  @media (min-width: @width-desktop) {
+    .text-h1-xl();
+
+    margin-left: 41px;
+    margin-bottom: 37px;
+    max-width: 850px;
+  }
+}
+
+.advantages-main__list {
+  .list-reset();
+
+  @media (min-width: @width-tablet) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 3px;
+    margin: 0 auto;
+    max-width: 670px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-left: 0;
+    max-width: 850px;
+  }
+}
+
+.advantages-list__item {
+  .text-h3();
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  fill: @main-color;
+
+  @media (min-width: @width-tablet) {
+    .text-h2-l();
+
+    width: 44%;
+    margin-right: 34px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 33%;
+    margin-right: 0;
+    margin-bottom: 57px;
+  }
+}
+
+.advantages-main__icon--eco {
+  padding: 11px 0 17px 8px;
+
+  // @media (min-width: @width-tablet) {
+  //   order: 1;
+  // }
+}
+
+.advantages-main__icon--handmade {
+  padding: 2px 0 17px 3px;
+}
+
+.advantages-main__icon--style {
+  padding-bottom: 26px;
+}
+
+.advantages-main__icon--native {
+  padding: 3px 0 27px 0;
+}
+
+.advantages-main__icon--likes {
+  padding: 5px 0 20px 8px;
+}
+
+.advantages-main__icon--wrapping {
+  padding: 0 0 20px 3px;
+}
