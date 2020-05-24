@@ -1,15 +1,15 @@
 .wrapper {
-  width: 320px;
+  width: @width-mobile;
   box-sizing: border-box;
   padding: 0 30px;
   margin: 0 auto;
 
   @media (min-width: @width-tablet) {
     padding: 0 50px;
-    width: 768px;
+    width: @width-tablet;
   }
 
   @media (min-width: @width-desktop) {
-    width: 1150px;
+    width: @width-desktop;
   }
 }
