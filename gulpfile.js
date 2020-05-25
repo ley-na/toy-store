@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+var posthtml = require("gulp-posthtml");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var less = require("gulp-less");
@@ -8,6 +9,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var include = require("posthtml-include");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -52,4 +55,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("build", gulp.series("css", "sprite", "html"));
+gulp.task("start", gulp.series("build", "server"));
