@@ -7,10 +7,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
 
   @media (min-width: @width-tablet) {
     flex-direction: row;
-    // padding: 42px 0 45px;
+    padding-top: 22px;
+    padding-bottom: 25px;
   }
 }
 
@@ -33,7 +36,8 @@
   display: flex;
   align-items: center;
   color: @black;
-  padding: 15px;
+  padding-top: 3px;
+  padding-bottom: 15px;
 
   &:active {
     color: @black-30;
@@ -49,7 +53,11 @@
 
   @media (min-width: @width-tablet) {
     padding: 0;
-    padding-top: 10px;
+    padding-top: 6px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding: 0;
   }
 }
 

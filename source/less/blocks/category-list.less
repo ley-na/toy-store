@@ -15,7 +15,21 @@
   width: 100%;
 
   @media (min-width: @width-tablet) {
-    width: 50%;
+    width: 334px;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 525px;
+  }
+}
+
+.category-list__item:nth-child(1) {
+  @media (min-width: @width-tablet) {
+    padding-left: 50px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-left: 0;
   }
 }
 

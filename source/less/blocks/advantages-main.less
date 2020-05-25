@@ -6,8 +6,8 @@
   @media (min-width: @width-desktop) {
     box-sizing: border-box;
     padding-left: 180px;
-    padding-top: 95px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
 }
 
@@ -30,11 +30,13 @@
 
 .advantages-main__title {
   .text-h2();
+  margin-top: 25px;
 
   @media (min-width: @width-tablet) {
     .text-h1-l();
-    margin-left: auto;
-    margin-right: auto;
+
+    margin-top: 20px;
+    margin-left: 15px;
     text-align: left;
     max-width: 670px;
   }
@@ -42,6 +44,7 @@
   @media (min-width: @width-desktop) {
     .text-h1-xl();
 
+    text-align: left;
     margin-left: 41px;
     margin-bottom: 37px;
     max-width: 850px;
@@ -55,37 +58,69 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding-left: 3px;
-    margin: 0 auto;
-    max-width: 670px;
+    margin-left: 21px;
+    width: 630px;
   }
 
   @media (min-width: @width-desktop) {
-    padding-left: 0;
-    max-width: 850px;
+    margin-top: 66px;
+    margin-left: 41px;
+    width: 745px;
   }
 }
 
 .advantages-list__item {
   .text-h3();
 
+  width: 251px;
   display: flex;
   flex-direction: column;
+  margin-top: 53px;
   margin-bottom: 30px;
   fill: @main-color;
 
   @media (min-width: @width-tablet) {
     .text-h2-l();
 
-    width: 44%;
+    width: 47%;
     margin-right: 34px;
-    margin-bottom: 59px;
+    margin-top: 30px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @width-desktop) {
-    width: 33%;
+    width: 44%;
+    margin-right: 25px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+  }
+}
+
+.advantages-list__item:nth-child(-n+2) {
+  @media (min-width: @width-desktop) {
+    margin-top: 0;
+  }
+}
+
+.advantages-list__item:nth-child(2n) {
+  @media (min-width: @width-tablet) {
     margin-right: 0;
-    margin-bottom: 57px;
+  }
+
+  @media (min-width: @width-desktop) {
+    margin-right: 0;
+  }
+}
+
+.advantages-list__item:last-child {
+  margin-bottom: 0;
+  
+  @media (min-width: @width-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @width-desktop) {
+    margin-bottom: 0;
   }
 }
 
