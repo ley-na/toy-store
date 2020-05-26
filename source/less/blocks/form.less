@@ -1,7 +1,7 @@
 .form {
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 52px;
+  padding-bottom: 33px;
 
   @media (min-width: @width-tablet) {
     padding-left: 0;
@@ -54,6 +54,10 @@
 }
 
 .form__fieldset-wrapper--submit {
+  @media (min-width: @width-tablet) {
+    padding-top: 7px;
+  }
+
   @media (min-width: @width-desktop) {
     max-width: 700px;
   }
@@ -71,12 +75,12 @@
   margin-bottom: 7px;
 
   @media (min-width: @width-tablet) {
-    padding-top: 45px;
+    padding-top: 51px;
     margin-bottom: 25px;
   }
 
   @media (min-width: @width-desktop) {
-    padding-top: 48px;
+    padding-top: 58px;
   }
 }
 
@@ -84,7 +88,7 @@
   margin-bottom: 30px;
 
   @media (min-width: @width-tablet) {
-    padding-top: 50px;
+    padding-top: 58px;
     padding-bottom: 22px;
     margin-bottom: 0;
   }
@@ -113,7 +117,7 @@
   text-transform: uppercase;
   color: @main-color;
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   white-space: nowrap;
   display: flex;
   align-items: center;

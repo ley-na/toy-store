@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
@@ -32,16 +32,16 @@
           </li>
         </ul>
         <ul class="main-nav__list user-list user-list--closed user-list--no-js">
-          <li class="user-list__item user-list__item--search">
-            <a class="user-list__link user-list__link---search" aria-label="Поиск по сайту" href="">
-              <svg class="user-list__icon user-list__link--search" width="18" height="18">
+          <li class="user-list__item">
+            <a class="user-list__link" aria-label="Поиск по сайту" href="">
+              <svg class="user-list__icon user-list__icon--search" width="18" height="18">
                 <use xlink:href="#icon-search"></use>
               </svg>
               <p class="user-list__text">Поиск по сайту</p></a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__link user-list__link---cart" href="">
-              <svg class="user-list__icon user-list__link--cart" width="20" height="19">
+            <a class="user-list__link" href="">
+              <svg class="user-list__icon user-list__icon--cart" width="20" height="19">
                 <use xlink:href="#icon-cart"></use>
               </svg>
               <span>Корзина: пока пуста</span>
@@ -61,10 +61,10 @@
     </nav>
   </header>
   <main class="main">
-    <section class="wrapper main__intro">
-      <h1 class="main__title">Милые штуки ручной работы</h1>
+    <section class="main__intro">
+      <h1 class="main__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
     </section>
-    <section class="category-main__list">
+    <section class="wrapper category-main">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="category-main__list category-list">
         <li class="category-list__item">
@@ -130,17 +130,17 @@
           <svg class="advantages-list__icon-eco" width="32" height="37">
             <use xlink:href="#icon-feature-flower"></use>
           </svg>
-          Экологически чистые материалы</li>
+          Экологически чистые&nbsp;материалы</li>
           <li class="advantages-list__item advantages-list__item--handmade">
             <svg class="advantages-list__icon-handmade" width="34" height="34">
               <use xlink:href="#icon-feature-ball"></use>
             </svg>
-            Связано вручную с любовью и умилением</li>
+            Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
         <li class="advantages-list__item advantages-list__item--style">
           <svg class="advantages-list__icon-style" width="47" height="27">
             <use xlink:href="#icon-feature-money"></use>
           </svg>
-          Скандинавский стиль по российской цене</li>
+          Скандинавский стиль по&nbsp;российской цене</li>
           <li class="advantages-list__item advantages-list__item--native">
             <svg class="advantages-list__icon-native" width="54" height="23">
               <use xlink:href="#icon-feature-rocket"></use>
@@ -150,12 +150,12 @@
           <svg class="advantages-list__icon-likes" width="33" height="28">
             <use xlink:href="#icon-feature-heart"></use>
           </svg>
-          Увеличивает лайки на фотографиях</li>
+          Увеличивает лайки на&nbsp;фотографиях</li>
         <li class="advantages-list__item advantages-list__item--wrapping">
           <svg class="advantages-list__icon-wrapping" width="33" height="32">
             <use xlink:href="#icon-feature-gift"></use>
           </svg>
-          Поставляется в подарочной упаковке</li>
+          Поставляется в подарочной&nbsp;упаковке</li>
       </ul>
     </section>
     <section class="wrapper review-main">
@@ -183,8 +183,8 @@
       </div>
       <a class="wrapper button review-main__button">Написать</a>
     </section>
-    <div class="contacts-main__wrapper clearfix">
-      <section class="contacts-main wrapper">
+    <div class="contacts-main">
+      <section class="contacts-main__wrapper wrapper">
         <div class="contacts-main__header-wrapper">
           <h2 class="contacts-main__title">Контакты
             <svg class="contacts-main__icon" width="47" height="82">
@@ -201,8 +201,7 @@
           </tr>
           <tr>
             <td class="contacts-main__field">адрес:</td>
-            <td class="contacts-main__value contacts-main__value--address">г. Санкт-Петербург, ул. Большая Конюшенная, д.
-              19/8, офис 101</td>
+            <td class="contacts-main__value contacts-main__value--address">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</td>
           </tr>
         </table>
       </section>
@@ -224,7 +223,7 @@
   <footer class="footer">
     <div class="footer__wrapper wrapper">
       <a class="footer__logo-link" href="./index.html">
-        <svg class="page-footer__logo-image" width="102" height="34">
+        <svg class="footer__logo-image" width="102" height="34">
           <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
@@ -258,33 +257,6 @@
       </a>
     </div>
   </footer>
-
-  <section class="product-modal">
-    <form class="product-modal__form modal-form" method="POST" action="https://echo.htmlacademy.ru">
-      <h2 class="modal-form__title">Добавить в корзину</h2>
-      <fieldset class="modal-form__filedset">
-        <legend class="modal-form__legend">Выберите размер</legend>
-        <ul class="modal-form__list">
-          <li class="modal-form__item">
-            <label class="modal-form__label">S
-              <input class="modal-form__input" type="radio" name="size" value="S">
-            </label>
-          </li>
-          <li class="modal-form__item">
-            <label class="modal-form__label">M
-              <input class="modal-form__input" type="radio" name="size" value="M">
-            </label>
-          </li>
-          <li class="modal-form__item">
-            <label class="modal-form__label">L
-              <input class="modal-form__input" type="radio" name="size" value="L">
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <button class="button modal-form__button" type="submit">Добавить</button>
-    </form>
-  </section>
   <script src="./js/mobile-menu.js"></script>
 </body>
 

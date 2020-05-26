@@ -8,12 +8,17 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
   @media (min-width: @width-tablet) {
     flex-direction: row;
-    padding-top: 22px;
+    padding-top: 20px;
     padding-bottom: 25px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-top: 14px;
+    padding-bottom: 20px;
   }
 }
 
@@ -24,7 +29,7 @@
     display: block;
     width: 102px;
     height: 34px;
-    margin-right: 83px;
+    // margin-right: 83px;
   }
 }
 
@@ -36,8 +41,11 @@
   display: flex;
   align-items: center;
   color: @black;
-  padding-top: 3px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top: @border-light;
 
   &:active {
     color: @black-30;
@@ -58,6 +66,7 @@
 
   @media (min-width: @width-desktop) {
     padding: 0;
+    padding-top: 6px;
   }
 }
 

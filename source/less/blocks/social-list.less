@@ -2,8 +2,23 @@
   .list-reset();
 
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 30px;
+  width: 145px;
+  align-items: baseline;
+  margin-right: 40px;
+  padding-top: 21px;
+  padding-bottom: 22px;
+
+  @media (min-width: @width-tablet) {
+    margin-left: 81px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @width-desktop) {
+    margin-left: 81px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
 }
 
 .social-list__item {
