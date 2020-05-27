@@ -12,24 +12,34 @@
 
   @media (min-width: @width-tablet) {
     flex-direction: row;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding-top: 58px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: @width-desktop) {
-    padding-top: 14px;
-    padding-bottom: 20px;
+    padding-top: 51px;
+    padding-bottom: 53px;
   }
 }
 
 .footer__logo-link {
   display: none;
 
+  &:hover,
+  &:focus {
+    fill: @main-color--dark-hover;
+    transition: 0.35s;
+  }
+
+  &:active {
+    fill: @main-color--dark-hover-30;
+  }
+
   @media (min-width: @width-tablet) {
     display: block;
     width: 102px;
     height: 34px;
-    // margin-right: 83px;
+    transition: 0.35s;
   }
 }
 
@@ -61,12 +71,12 @@
 
   @media (min-width: @width-tablet) {
     padding: 0;
-    padding-top: 6px;
+    border-top: none;
   }
 
   @media (min-width: @width-desktop) {
     padding: 0;
-    padding-top: 6px;
+    border-top: none;
   }
 }
 
