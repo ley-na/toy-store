@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 
   @media (min-width: @width-tablet) {
     flex-direction: row;
@@ -10,9 +10,10 @@
   }
 
   @media (min-width: @width-desktop) {
-    width: 316px;
+    width: 30%;
     flex-direction: column;
-    padding-bottom: 57px;
+    padding-bottom: 55px;
+    flex-grow: 1;
   }
 
   &:hover .card__content-wrapper,
@@ -69,7 +70,7 @@
   .text-h3-l();
 
   margin-top: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 
   @media (min-width: @width-tablet) {
     .text-h2-l();
@@ -80,24 +81,30 @@
 }
 
 .card__content-wrapper {
-  width: 260px;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
   padding-left: 28px;
   padding-right: 28px;
+  padding-bottom: 24px;
   border: @border-light;
 
   @media (min-width: @width-tablet) {
     padding-left: 28px;
-    padding-right: 75px;
+    padding-right: 33px;
+    padding-bottom: 24px;
     display: flex;
-    width: 335px;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
   }
 
   @media (min-width: @width-desktop) {
-    width: 316px;
+    width: 100%;
+    height: 100%;
     padding-left: 28px;
     padding-right: 26px;
+    padding-bottom: 0;
   }
 }
 
@@ -107,37 +114,41 @@
   color: @text-color;
 
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: auto;
 
   @media (min-width: @width-tablet) {
     .text-h4-l();
 
     font-weight: normal;
-    margin-bottom: 210px;
+    margin-bottom: auto;
   }
 
   @media (min-width: @width-desktop) {
-    margin-bottom: 38px;
+    margin-bottom: auto;
   }
 }
 
 .card__price {
   .text-h4();
 
+  padding-top: 22px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  margin-right: auto;
 
   @media (min-width: @width-tablet) {
     font-size: 17px;
+    padding-top: 22px;
     padding-left: 3px;
-    margin-right: 3px;
     margin-bottom: 0;
+    margin-right: auto;
   }
 
   @media (min-width: @width-desktop) {
+    padding-top: 0;
     padding-left: 0;
-    margin-right: auto;
     margin-top: 22px;
+    margin-right: auto;
     margin-bottom: 28px;
   }
 }
@@ -147,6 +158,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  padding-top: 23px;
   opacity: 0.2;
   transition: 0.35s;
 
@@ -171,14 +183,16 @@
   display: flex;
   justify-content: flex-start;
   border-top: @border-light;
+  margin-top: 19px;
 
   @media (min-width: @width-tablet) {
     box-sizing: border-box;
-    width: 249px;
-    flex-grow: 1;
+    width: 270px;
   }
 
   @media (min-width: @width-desktop) {
-    width: 256px;
+    padding: 0;
+    width: 100%;
+    margin-top: 16px;
   }
 }
