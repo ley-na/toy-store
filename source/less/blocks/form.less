@@ -341,6 +341,17 @@
   display: block;
 }
 
+.form__input:disabled + label,
+.form__input:checked:disabled + label {
+  color: @black;
+  opacity: 0.5;
+}
+
+.form__input:disabled + label:hover::before,
+.form__input:disabled + label:focus::before {
+  border: @border-light;
+}
+
 .form__label--checkbox::before {
   content: "";
   border: @border-main-color;
