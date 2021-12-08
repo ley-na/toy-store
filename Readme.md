@@ -4,4 +4,4 @@
 
 Адаптивность графики: ретинизация, векторные изображения.
 
-Tech stack: HTML, CSS, JavaScript, Sass, Gulp и БЭМ.
+Tech stack: HTML, CSS, JavaScript, Less, Gulp и БЭМ.
